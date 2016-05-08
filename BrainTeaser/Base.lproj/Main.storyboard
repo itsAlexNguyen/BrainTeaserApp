@@ -25,39 +25,51 @@
                                     <constraint firstAttribute="height" constant="181" id="O7O-ZQ-AAF"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4e1-aG-nuv">
-                                <rect key="frame" x="70" y="346" width="461" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4e1-aG-nuv" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="70" y="345" width="461" height="40"/>
+                                <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="SCN-gG-vzN"/>
+                                    <constraint firstAttribute="height" constant="40" id="SCN-gG-vzN"/>
                                     <constraint firstAttribute="width" constant="329" id="hp1-Am-cyw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="hp1-Am-cyw"/>
                                     </mask>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0r-Vh-ZGJ">
-                                <rect key="frame" x="120" y="417" width="361" height="46"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0r-Vh-ZGJ" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="120" y="426" width="361" height="46"/>
+                                <color key="backgroundColor" red="0.066666666666666666" green="0.5725490196078431" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="lbP-S1-gUT"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ThQ-8j-hKY">
-                                <rect key="frame" x="70" y="285" width="461" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ThQ-8j-hKY" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="70" y="280" width="461" height="40"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Fig-hl-Am8"/>
+                                    <constraint firstAttribute="height" constant="40" id="Fig-hl-Am8"/>
                                     <constraint firstAttribute="width" constant="329" id="deR-A1-6k2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="deR-A1-6k2"/>
@@ -76,7 +88,7 @@
                             <constraint firstItem="TzM-Fh-wN8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="b3x-Fm-Pb1"/>
                             <constraint firstItem="4e1-aG-nuv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g9E-nL-Aik"/>
                             <constraint firstItem="Y0r-Vh-ZGJ" firstAttribute="top" secondItem="4e1-aG-nuv" secondAttribute="bottom" constant="41" id="mrv-y0-3VB"/>
-                            <constraint firstItem="4e1-aG-nuv" firstAttribute="top" secondItem="ThQ-8j-hKY" secondAttribute="bottom" constant="31" id="vPh-RQ-bC9"/>
+                            <constraint firstItem="4e1-aG-nuv" firstAttribute="top" secondItem="ThQ-8j-hKY" secondAttribute="bottom" constant="25" id="vPh-RQ-bC9"/>
                             <constraint firstItem="4e1-aG-nuv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="wCa-gj-CRO"/>
                         </constraints>
                     </view>
