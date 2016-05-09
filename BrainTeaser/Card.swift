@@ -22,12 +22,14 @@ class Card: UIView {
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         setupView()
-        selectShape()
+        
     }
     override func awakeFromNib() {
         setupView()
+        selectShape()
     }
     func setupView() {
+        self.layer.cornerRadius = cornerRadius
         self.layer.shadowOpacity = 0.8
         self.layer.shadowRadius = 5.0
         self.layer.shadowOffset = CGSizeMake(0.0, 2.0)

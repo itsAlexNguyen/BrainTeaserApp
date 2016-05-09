@@ -131,6 +131,9 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="yesBtnPressed:" destination="cs4-SI-KIy" eventType="touchUpInside" id="eSE-Ig-lKx"/>
+                                </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krz-1I-ieV" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
                                 <rect key="frame" x="20" y="524" width="140" height="46"/>
@@ -143,11 +146,14 @@
                                 <state key="normal" title="NO">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="noBtnPressed:" destination="cs4-SI-KIy" eventType="touchUpInside" id="yfo-VR-00d"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember this image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYk-PV-ZcK">
-                                <rect key="frame" x="89" y="28" width="423" height="21"/>
+                                <rect key="frame" x="89" y="40" width="423" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="OY0-59-MrS"/>
+                                    <constraint firstAttribute="height" constant="70" id="OY0-59-MrS"/>
                                     <constraint firstAttribute="width" constant="423" id="e5U-hz-aFT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
@@ -162,9 +168,14 @@
                             <constraint firstItem="kYk-PV-ZcK" firstAttribute="centerX" secondItem="aqt-PK-AWs" secondAttribute="centerX" id="K4n-Sz-OSe"/>
                             <constraint firstItem="7Su-TD-8pY" firstAttribute="top" secondItem="77q-s8-SGZ" secondAttribute="bottom" constant="30" id="PpD-t1-k0Y"/>
                             <constraint firstItem="77q-s8-SGZ" firstAttribute="trailing" secondItem="aqt-PK-AWs" secondAttribute="trailingMargin" id="npY-fD-JvN"/>
-                            <constraint firstItem="kYk-PV-ZcK" firstAttribute="top" secondItem="Ebu-8O-wEz" secondAttribute="bottom" constant="8" id="uIw-tG-XkY"/>
+                            <constraint firstItem="kYk-PV-ZcK" firstAttribute="top" secondItem="Ebu-8O-wEz" secondAttribute="bottom" constant="20" id="uIw-tG-XkY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="noBtn" destination="Krz-1I-ieV" id="1lo-Re-iKH"/>
+                        <outlet property="titleLbl" destination="kYk-PV-ZcK" id="MNI-V2-Aiz"/>
+                        <outlet property="yesBtn" destination="77q-s8-SGZ" id="Fbm-B0-1yC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iCf-Qq-tuo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
