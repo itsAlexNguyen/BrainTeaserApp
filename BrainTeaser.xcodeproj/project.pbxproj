@@ -10,6 +10,9 @@
 		469A1E391CDFAF27002ABFD6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469A1E381CDFAF27002ABFD6 /* CustomTextField.swift */; };
 		469A1E3B1CDFB186002ABFD6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469A1E3A1CDFB186002ABFD6 /* CustomButton.swift */; };
 		469A1E3D1CE003EB002ABFD6 /* AnimationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469A1E3C1CE003EB002ABFD6 /* AnimationEngine.swift */; };
+		469A1E3F1CE01EEB002ABFD6 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469A1E3E1CE01EEB002ABFD6 /* GameVC.swift */; };
+		469A1E411CE020B1002ABFD6 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469A1E401CE020B1002ABFD6 /* Card.swift */; };
+		469A1E431CE020CA002ABFD6 /* Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = 469A1E421CE020CA002ABFD6 /* Card.xib */; };
 		46B32CFA1CDFA8CB000A219A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B32CF91CDFA8CB000A219A /* AppDelegate.swift */; };
 		46B32CFC1CDFA8CB000A219A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B32CFB1CDFA8CB000A219A /* LoginVC.swift */; };
 		46B32CFF1CDFA8CB000A219A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B32CFD1CDFA8CB000A219A /* Main.storyboard */; };
@@ -25,6 +28,9 @@
 		469A1E381CDFAF27002ABFD6 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		469A1E3A1CDFB186002ABFD6 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		469A1E3C1CE003EB002ABFD6 /* AnimationEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationEngine.swift; sourceTree = "<group>"; };
+		469A1E3E1CE01EEB002ABFD6 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		469A1E401CE020B1002ABFD6 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		469A1E421CE020CA002ABFD6 /* Card.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Card.xib; sourceTree = "<group>"; };
 		46B32CF61CDFA8CB000A219A /* BrainTeaser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainTeaser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B32CF91CDFA8CB000A219A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46B32CFB1CDFA8CB000A219A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -69,6 +75,8 @@
 				469A1E381CDFAF27002ABFD6 /* CustomTextField.swift */,
 				46B32D021CDFA8CB000A219A /* LaunchScreen.storyboard */,
 				469A1E3A1CDFB186002ABFD6 /* CustomButton.swift */,
+				469A1E401CE020B1002ABFD6 /* Card.swift */,
+				469A1E421CE020CA002ABFD6 /* Card.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -77,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				46B32CFB1CDFA8CB000A219A /* LoginVC.swift */,
+				469A1E3E1CE01EEB002ABFD6 /* GameVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -204,6 +213,7 @@
 				46B32D041CDFA8CB000A219A /* LaunchScreen.storyboard in Resources */,
 				46B32D011CDFA8CB000A219A /* Assets.xcassets in Resources */,
 				46B32CFF1CDFA8CB000A219A /* Main.storyboard in Resources */,
+				469A1E431CE020CA002ABFD6 /* Card.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,8 +274,10 @@
 			files = (
 				469A1E3B1CDFB186002ABFD6 /* CustomButton.swift in Sources */,
 				46B32CFC1CDFA8CB000A219A /* LoginVC.swift in Sources */,
+				469A1E411CE020B1002ABFD6 /* Card.swift in Sources */,
 				46B32CFA1CDFA8CB000A219A /* AppDelegate.swift in Sources */,
 				469A1E3D1CE003EB002ABFD6 /* AnimationEngine.swift in Sources */,
+				469A1E3F1CE01EEB002ABFD6 /* GameVC.swift in Sources */,
 				469A1E391CDFAF27002ABFD6 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

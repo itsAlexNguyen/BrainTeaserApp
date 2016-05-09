@@ -42,7 +42,9 @@ class AnimationEngine {
                 moveAnimation.toValue = self.originalConstants[index]
                 moveAnimation.springBounciness = 12
                 moveAnimation.springSpeed = 12
-                
+                if (index > 0) {
+                    moveAnimation.dynamicsFriction += 25 + CGFloat(index)
+                }
                 let constraint = self.constraints[index]
                 constraint.pop_addAnimation(moveAnimation, forKey: "moveOnScreen")
                 index = index + 1

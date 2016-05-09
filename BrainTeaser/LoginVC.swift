@@ -20,7 +20,7 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.animationEngine = AnimationEngine(constraints: [emailConstraint, emailLeadingEdge, passwordConstraint, passwordLeadingEdge, loginConstraint, loginLeadingEdge])
+        self.animationEngine = AnimationEngine(constraints: [emailLeadingEdge, passwordLeadingEdge, loginLeadingEdge])
     }
     override func viewDidAppear(animated: Bool) {
         self.animationEngine.animateOnScreen(1)

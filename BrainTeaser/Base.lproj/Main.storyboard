@@ -55,6 +55,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="cs4-SI-KIy" kind="show" id="ErL-IC-uCn"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ThQ-8j-hKY" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
                                 <rect key="frame" x="70" y="280" width="461" height="40"/>
@@ -104,6 +107,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="360"/>
+        </scene>
+        <!--GameVC-->
+        <scene sceneID="sKK-VQ-D6v">
+            <objects>
+                <viewController id="cs4-SI-KIy" customClass="GameVC" customModule="BrainTeaser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ebu-8O-wEz"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Su-TD-8pY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aqt-PK-AWs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77q-s8-SGZ" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="440" y="524" width="140" height="46"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.57254901960000004" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="IZa-xm-HZ9"/>
+                                    <constraint firstAttribute="width" constant="140" id="Zl5-xZ-XFm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krz-1I-ieV" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="20" y="524" width="140" height="46"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.57254901960000004" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="J7f-1W-J8U"/>
+                                    <constraint firstAttribute="width" constant="140" id="cQc-fq-Gi5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="NO">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember this image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYk-PV-ZcK">
+                                <rect key="frame" x="89" y="28" width="423" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OY0-59-MrS"/>
+                                    <constraint firstAttribute="width" constant="423" id="e5U-hz-aFT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Krz-1I-ieV" firstAttribute="leading" secondItem="aqt-PK-AWs" secondAttribute="leadingMargin" id="5Lx-xH-QdV"/>
+                            <constraint firstItem="7Su-TD-8pY" firstAttribute="top" secondItem="Krz-1I-ieV" secondAttribute="bottom" constant="30" id="9K4-pG-MiR"/>
+                            <constraint firstItem="kYk-PV-ZcK" firstAttribute="centerX" secondItem="aqt-PK-AWs" secondAttribute="centerX" id="K4n-Sz-OSe"/>
+                            <constraint firstItem="7Su-TD-8pY" firstAttribute="top" secondItem="77q-s8-SGZ" secondAttribute="bottom" constant="30" id="PpD-t1-k0Y"/>
+                            <constraint firstItem="77q-s8-SGZ" firstAttribute="trailing" secondItem="aqt-PK-AWs" secondAttribute="trailingMargin" id="npY-fD-JvN"/>
+                            <constraint firstItem="kYk-PV-ZcK" firstAttribute="top" secondItem="Ebu-8O-wEz" secondAttribute="bottom" constant="8" id="uIw-tG-XkY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iCf-Qq-tuo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969" y="360"/>
         </scene>
     </scenes>
     <resources>
