@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		469A1E391CDFAF27002ABFD6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469A1E381CDFAF27002ABFD6 /* CustomTextField.swift */; };
 		469A1E3B1CDFB186002ABFD6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469A1E3A1CDFB186002ABFD6 /* CustomButton.swift */; };
+		469A1E3D1CE003EB002ABFD6 /* AnimationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469A1E3C1CE003EB002ABFD6 /* AnimationEngine.swift */; };
 		46B32CFA1CDFA8CB000A219A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B32CF91CDFA8CB000A219A /* AppDelegate.swift */; };
 		46B32CFC1CDFA8CB000A219A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B32CFB1CDFA8CB000A219A /* LoginVC.swift */; };
 		46B32CFF1CDFA8CB000A219A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B32CFD1CDFA8CB000A219A /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		469A1E301CDFA974002ABFD6 /* BrainTeaser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrainTeaser-Bridging-Header.h"; sourceTree = "<group>"; };
 		469A1E381CDFAF27002ABFD6 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		469A1E3A1CDFB186002ABFD6 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		469A1E3C1CE003EB002ABFD6 /* AnimationEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationEngine.swift; sourceTree = "<group>"; };
 		46B32CF61CDFA8CB000A219A /* BrainTeaser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainTeaser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B32CF91CDFA8CB000A219A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46B32CFB1CDFA8CB000A219A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		469A1E371CDFAA7B002ABFD6 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				469A1E3C1CE003EB002ABFD6 /* AnimationEngine.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				469A1E3B1CDFB186002ABFD6 /* CustomButton.swift in Sources */,
 				46B32CFC1CDFA8CB000A219A /* LoginVC.swift in Sources */,
 				46B32CFA1CDFA8CB000A219A /* AppDelegate.swift in Sources */,
+				469A1E3D1CE003EB002ABFD6 /* AnimationEngine.swift in Sources */,
 				469A1E391CDFAF27002ABFD6 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

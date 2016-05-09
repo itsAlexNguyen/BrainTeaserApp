@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain-logo" translatesAutoresizingMaskIntoConstraints="NO" id="TzM-Fh-wN8">
-                                <rect key="frame" x="178" y="28" width="244" height="181"/>
+                                <rect key="frame" x="178" y="40" width="244" height="181"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="244" id="3MJ-9C-Jw7"/>
                                     <constraint firstAttribute="height" constant="181" id="O7O-ZQ-AAF"/>
@@ -85,13 +85,21 @@
                             <constraint firstItem="TzM-Fh-wN8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BU3-op-yCE"/>
                             <constraint firstItem="Y0r-Vh-ZGJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ddd-WP-xLr"/>
                             <constraint firstItem="ThQ-8j-hKY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="NHi-D9-NGa"/>
-                            <constraint firstItem="TzM-Fh-wN8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="b3x-Fm-Pb1"/>
+                            <constraint firstItem="TzM-Fh-wN8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="b3x-Fm-Pb1"/>
                             <constraint firstItem="4e1-aG-nuv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g9E-nL-Aik"/>
                             <constraint firstItem="Y0r-Vh-ZGJ" firstAttribute="top" secondItem="4e1-aG-nuv" secondAttribute="bottom" constant="41" id="mrv-y0-3VB"/>
                             <constraint firstItem="4e1-aG-nuv" firstAttribute="top" secondItem="ThQ-8j-hKY" secondAttribute="bottom" constant="25" id="vPh-RQ-bC9"/>
                             <constraint firstItem="4e1-aG-nuv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="wCa-gj-CRO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailConstraint" destination="6M6-Ig-iUD" id="QDR-hW-JIQ"/>
+                        <outlet property="emailLeadingEdge" destination="NHi-D9-NGa" id="YHM-J6-Wie"/>
+                        <outlet property="loginConstraint" destination="Ddd-WP-xLr" id="EvB-Mz-dLM"/>
+                        <outlet property="loginLeadingEdge" destination="2zp-Td-cXU" id="Q5M-2o-h2s"/>
+                        <outlet property="passwordConstraint" destination="g9E-nL-Aik" id="FgV-j7-5ha"/>
+                        <outlet property="passwordLeadingEdge" destination="wCa-gj-CRO" id="Hge-Db-Tdj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
